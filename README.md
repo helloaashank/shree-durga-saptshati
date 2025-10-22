@@ -11,6 +11,8 @@ Status tracker (update as features evolve):
 - [x] Add basic Auth UI (Sign in page + Google login placeholder)
 - [x] Collect basic user info placeholders (name, email, phone) on sign up page
 - [x] Disable right-click and common copy/paste shortcuts on web
+- [x] Responsive layout across devices (mobile/tablet/desktop)
+- [x] Robust dark mode support (prefers-color-scheme)
 - [ ] Hook up real backend/Auth provider (Google OAuth)
 - [ ] Content population for new pages
 - [ ] Improve accessibility and SEO metadata
@@ -18,6 +20,12 @@ Status tracker (update as features evolve):
 ## Development
 
 Static HTML/CSS site. Open index.html in a browser. All subpages share the same stylesheet.
+
+Checklist for future edits:
+- Ensure new components are responsive: use grid/flex with wrap and mobile breakpoints at 992px/768px/480px.
+- Test dark mode: verify colors derive from CSS variables and surfaces adapt under prefers-color-scheme: dark.
+- Keep navigation usable on small screens (wrap and center).
+- Avoid fixed widths; prefer max-width and relative spacing.
 
 ## Pages
 - index.html: Home, About, Privacy, Reviews, FAQs
