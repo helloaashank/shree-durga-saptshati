@@ -1,0 +1,215 @@
+/* CSS Variables for theming */
+:root {
+    --bg-color: #e6e6fa;
+    --heading-color: #ED143D;
+    --contrast-color: #8e3341;
+    --footer-bg: #081828;
+    --text-color: #333;
+    --footer-text: #fff;
+    --link-color: #8e3341;
+    --button-bg: #ED143D;
+    --button-text: #fff;
+}
+
+/* Dark mode overrides */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #081828;
+        --heading-color: #ff6b7d; /* Lighter crimson for dark mode */
+        --contrast-color: #b85a6a; /* Lighter contrast */
+        --footer-bg: #e6e6fa;
+        --text-color: #e6e6fa;
+        --footer-text: #081828;
+        --link-color: #ff6b7d;
+        --button-bg: #8e3341;
+        --button-text: #e6e6fa;
+    }
+}
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: var(--contrast-color);
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--bg-color);
+}
+
+/* Main content */
+main {
+    padding: 2rem 0;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    color: var(--heading-color);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+h3 {
+    color: var(--heading-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Book section */
+.book-section {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.book-image {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.book-details {
+    flex: 1;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--contrast-color);
+    margin: 1rem 0;
+}
+
+.buy-button {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: var(--contrast-color);
+}
+
+/* About and Privacy sections */
+#about, #privacy {
+    background-color: rgba(255,255,255,0.8);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+#about p, #privacy p {
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 1rem;
+    }
+
+    nav ul li {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .book-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .book-image {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .book-section {
+        padding: 1rem;
+    }
+
+    nav ul li {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+}
