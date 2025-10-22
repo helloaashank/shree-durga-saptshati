@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>खरीदें - सनातन पूजा पद्धति</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>सनातन पूजा पद्धति</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="index.html#privacy">Privacy Policy</a></li>
+          <li><a href="auth.html">Sign In</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container">
+      <h2>श्री दुर्गा शप्तशती</h2>
+      <div class="book-section">
+        <img src="shree durga saptshati.png" alt="Book Image" class="book-image" />
+        <div class="book-details">
+          <p>
+            दिव्य ज्ञान और श्रद्धा से परिपूर्ण ग्रंथ। आपकी आध्यात्मिक साधना और
+            नित्य पाठ के लिए उत्तम।
+          </p>
+          <p class="price">₹199</p>
+          <div style="display:flex; gap: 0.75rem; flex-wrap: wrap;">
+            <a class="buy-button" href="https://m.facebook.com/story.php?story_fbid=122102374700452636&id=61563579101073" target="_blank" rel="noopener">Contact Us</a>
+            <a class="buy-button" href="auth.html">Sign In to Purchase</a>
+          </div>
+          <ul style="margin-top:1rem;">
+            <li>फास्ट डिलीवरी (3-5 दिन)</li>
+            <li>कॅश ऑन डिलिवरी उपलब्ध</li>
+            <li>सुरक्षित पैकेजिंग</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="content-grid" style="margin-top:2rem; display:grid; gap:1rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
+        <div class="card">
+          <h3>क्या शामिल है?</h3>
+          <p>पूर्ण पाठ, बीज मंत्र, विनियोग, साधना निर्देश और संक्षिप्त अर्थ।</p>
+        </div>
+        <div class="card">
+          <h3>क्यों खरीदें?</h3>
+          <p>सुंदर छपाई, टिकाऊ बाइंडिंग और सहज पठन के लिए स्पष्ट फॉन्ट।</p>
+        </div>
+        <div class="card">
+          <h3>उपयोग</h3>
+          <p>नवरात्रि, विशेष पूजन, और दैनिक मंत्र साधना में उपयोगी।</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 सनातन पूजा पद्धति. All rights reserved.</p>
+      <p>Designed with faith and care.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Disable right-click and common shortcuts
+    document.addEventListener('contextmenu', e => e.preventDefault());
+    document.addEventListener('keydown', (e) => {
+      if ((e.ctrlKey || e.metaKey) && ['c','x','v','u','s','p'].includes(e.key.toLowerCase())) {
+        e.preventDefault();
+      }
+      if (e.key === 'F12') e.preventDefault();
+    });
+  </script>
+</body>
+</html>

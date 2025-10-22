@@ -15,6 +15,11 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="drik-panchang.html">Drik Panchang</a></li>
+                    <li><a href="festivals.html">Festivals</a></li>
+                    <li><a href="scriptures.html">Scripture Books</a></li>
+                    <li><a href="bhajans.html">Bhajans</a></li>
+                    <li><a href="auth.html">Sign In</a></li>
                 </ul>
             </nav>
         </div>
@@ -30,7 +35,7 @@
                         <h3>श्री दुर्गा शप्तशती</h3>
                         <p>A profound religious text that guides believers on their spiritual journey. This sacred book contains timeless wisdom and teachings to enrich your faith.</p>
                         <p class="price">₹199</p>
-                        <button class="buy-button">Buy Now</button>
+                        <a class="buy-button" href="buy.html">Buy Now</a>
                     </div>
                 </div>
             </div>
@@ -53,6 +58,43 @@
                 <p><strong>Contact:</strong> For privacy concerns, please contact us at privacy@sacredscriptures.com.</p>
             </div>
         </section>
+    <section id="reviews">
+            <div class="container">
+                <h2>Reviews</h2>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <p>"अद्भुत पुस्तक। नियमित पाठ से मन को शांति मिलती है।"</p>
+                        <strong>- राजेश शर्मा</strong>
+                    </div>
+                    <div class="review-card">
+                        <p>"सुस्पष्ट छपाई और सुगम भाषा। हर घर में होनी चाहिए।"</p>
+                        <strong>- सीमा अग्रवाल</strong>
+                    </div>
+                    <div class="review-card">
+                        <p>"आध्यात्मिक साधना के लिए उत्तम।"</p>
+                        <strong>- नीरज वर्मा</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faqs">
+            <div class="container">
+                <h2>FAQs</h2>
+                <details>
+                    <summary>डिलीवरी में कितना समय लगेगा?</summary>
+                    <p>आमतौर पर 3-5 कार्य दिवस।</p>
+                </details>
+                <details>
+                    <summary>क्या कॅश ऑन डिलिवरी उपलब्ध है?</summary>
+                    <p>हाँ, COD उपलब्ध है।</p>
+                </details>
+                <details>
+                    <summary>क्या यह मूल पाठ के साथ है?</summary>
+                    <p>हाँ, शुद्ध पाठ के साथ स्पष्ट फॉन्ट में।</p>
+                </details>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -67,6 +109,14 @@
         if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
             document.body.classList.add('dark-mode');
         }
+    // Disable right-click and common shortcuts
+        document.addEventListener('contextmenu', e => e.preventDefault());
+        document.addEventListener('keydown', (e) => {
+            if ((e.ctrlKey || e.metaKey) && ['c','x','v','u','s','p'].includes(e.key.toLowerCase())) {
+                e.preventDefault();
+            }
+            if (e.key === 'F12') e.preventDefault();
+        });
     </script>
 </body>
 </html>
